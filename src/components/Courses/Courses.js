@@ -1,16 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import useInfodata from '../../hooks/useInfodata';
 import CourseInfo from '../CourseInfo/CourseInfo';
 import './Courses.css'
 
 const Courses = () => {
 
-    const [courses, setCourses] = useState([]);
-
-    useEffect( () => {
-        fetch('./coursesData.JSON')
-        .then(res => res.json())
-        .then(data => setCourses(data))
-    }, []);
+    const [courses] = useInfodata([]);
 
     return (
         <div className='container'>

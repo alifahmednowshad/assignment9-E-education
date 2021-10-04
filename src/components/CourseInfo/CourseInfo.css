@@ -1,4 +1,10 @@
-
+.my-card{
+    border: 1px solid #0B5ED7;
+    box-shadow: 0 2px 4px 0 rgba(39, 39, 39, 0.2), 0 3px 10px 0 rgba(73, 71, 71, 0.19);
+}
+.my-card:hover{
+    box-shadow: 0 4px 8px 0 rgb(0, 26, 255);
+}
 .course-img{
     height: 350px;
     width: 100%;
@@ -6,7 +12,7 @@
 }
 .teacher-img{
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     background-size: cover;
 }
