@@ -1,0 +1,12 @@
+
+.course-img{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+}
+.teacher-img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+}
