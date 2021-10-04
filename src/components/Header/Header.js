@@ -33,7 +33,7 @@ const Header = () => {
                     <Route exact path='/'>
                         <Home></Home>
                     </Route>
-                    <Route path='*'>
+                    <Route path='/*'>
                         <NotFound></NotFound>
                     </Route>
                 </Switch>
