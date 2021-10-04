@@ -12,9 +12,9 @@ const Teacher = (props) => {
                 <div className="card-body text-center">
                     <h4 className='text-center'>{t_name}</h4>
                     <div className='fs-3'>
-                        <i class="fab fa-facebook-square me-4 t-icons"></i>
-                        <i class="fab fa-linkedin me-4 t-icons"></i>
-                        <i class="fab fa-twitter-square t-icons"></i>
+                        <i className="fab fa-facebook-square me-4 t-icons"></i>
+                        <i className="fab fa-linkedin me-4 t-icons"></i>
+                        <i className="fab fa-twitter-square t-icons"></i>
                     </div>
                 </div>
             </div>

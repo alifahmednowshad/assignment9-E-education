@@ -4,7 +4,7 @@ import './CourseInfo.css'
 
 const CourseInfo = (props) => {
 
-    const history = useHistory([])
+    const history = useHistory([]);
     const {t_name, t_img, c_img, title, c_name, student, lesson} = props.course || {};
     const handleAdmissinBtn = () =>{
         history.push('./admission')
