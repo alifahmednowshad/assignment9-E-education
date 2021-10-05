@@ -5,7 +5,7 @@ import './CourseInfo.css'
 const CourseInfo = (props) => {
 
     const history = useHistory([]);
-    const {t_name, t_img, c_img, title, c_name, student, lesson} = props.course || {};
+    const {t_name, t_img, c_img, title, c_name, student, lesson, price} = props.course || {};
     const handleAdmissinBtn = () =>{
         history.push('./admission')
     }
@@ -17,15 +17,18 @@ const CourseInfo = (props) => {
                     <img src={c_img} className='course-img card-img-top img-fluid' alt="" />
                 </div>
                 <div className="card-body bg-light">
-                    <h5 className='text-danger'>{c_name}</h5>
+                    <div className='d-flex justify-content-between'>
+                        <h4>{c_name}</h4>
+                        <h5 className='text-danger'>${price}</h5>
+                    </div>
                     <h4 className='text-primary'>{title.slice(0,40)}...</h4>
                     <div className='d-flex my-4 align-items-center'>
                         <img src={t_img} className='teacher-img rounded-circle img-fluid' alt="" />
                         <p className='ms-3'>{t_name}</p>
                     </div>
                     <div className='d-flex fw-bold align-items-center justify-content-between'>
-                        <p className=''>Lessons: {lesson}</p>
-                        <p className=''>Students: {student}</p>
+                        <p className=''><i className="fas fa-book"></i> {lesson} Lesson </p>
+                        <p className=''><i className="fas fa-user"></i> {student} Students</p>
                     </div>
                     <button onClick={handleAdmissinBtn} className='btn btn-primary w-100 py-2'>Admission</button>
                 </div> 
