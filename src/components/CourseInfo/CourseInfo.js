@@ -24,8 +24,8 @@ const CourseInfo = (props) => {
                         <p className='ms-3'>{t_name}</p>
                     </div>
                     <div className='d-flex fw-bold align-items-center justify-content-between'>
-                        <p className=''>Lessons: {student}</p>
-                        <p className=''>Students: {lesson}</p>
+                        <p className=''>Lessons: {lesson}</p>
+                        <p className=''>Students: {student}</p>
                     </div>
                     <button onClick={handleAdmissinBtn} className='btn btn-primary w-100 py-2'>Admission</button>
                 </div> 
